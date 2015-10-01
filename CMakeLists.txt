@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.6)
 
 project(Heroes-client)
 
-set(EXECUTABLE_OUTPUT_PATH ~/Heroes/bin)
+set(EXECUTABLE_OUTPUT_PATH ../bin)
 
 #Déclaration de l'exécutable
 
