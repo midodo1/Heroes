@@ -1,0 +1,1 @@
+/usr/bin/g++-4.8       CMakeFiles/executable-client.dir/src/main.cpp.o  -o ../bin/executable-client -rdynamic /usr/lsa/lib/libsfml-graphics.so /usr/lsa/lib/libsfml-window.so /usr/lsa/lib/libsfml-system.so /usr/lsa/lib/libsfml-network.so /usr/lsa/lib/libsfml-audio.so -Wl,-rpath,/usr/lsa/lib 

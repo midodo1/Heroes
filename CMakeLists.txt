@@ -16,51 +16,7 @@ add_executable(
 
         src/main.cpp
 
-	src/Element.cpp
-
-	src/Element.h
-
-	src/MobileElement.cpp
-
-	src/MobileElement.h
-
-	src/StaticElement.cpp
-
-	src/StaticElement.h
-
-	src/Hero.cpp
-
-	src/Hero.h
-
-	src/Soldier.cpp
-
-	src/Soldier.h
-
-	src/Citizen.cpp
-
-	src/Citizen.h
-
-	src/Building.cpp
-
-	src/Building.h
-
-	src/Grass.cpp
-
-	src/Grass.h
-
-	src/Roc.cpp
-
-	src/Roc.h
-
-	src/AElementAlloc.h
-
-	src/ElementAlloc.cpp
-
-	src/ElementAlloc.h
-
-	src/ElementFactory.cpp
-
-	src/ElementFactory.h
+	src/TileMap.h
 
 )
 
