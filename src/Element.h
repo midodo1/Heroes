@@ -4,6 +4,7 @@
 #include <string>
 
 
+
 	enum  TypeID 
 					{
 						HERO=1,

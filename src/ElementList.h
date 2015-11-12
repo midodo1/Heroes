@@ -8,15 +8,16 @@
 #include "ElementFactory.h"
 
 
+
 class State;
 
-class ElementList:public Observable{
+class ElementList:public Observable {
 	
 		public:
 			
-				ElementList(State& s);
+				ElementList(State & s);
 				
-			    State& getState(); 
+			    State & getState(); 
 				
 				int const size();
 				

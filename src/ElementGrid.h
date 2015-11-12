@@ -10,10 +10,7 @@
 #include "State.h"
 
 
-
-
-
-class ElementGrid:public ElementList{
+class ElementGrid:public ElementList {
 	
 		public:
 			

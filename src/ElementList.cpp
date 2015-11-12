@@ -1,5 +1,6 @@
 #include "ElementList.h"
 #include "ListEvent.h"
+#include "State.h"
 
 using namespace std ;
 
@@ -26,15 +27,15 @@ void ElementList::clear()
 	elements.clear();
 }
 
-void ElementList::setElementFactory(state::ElementFactory* f)
+void ElementList::setElementFactory(ElementFactory* f)
 {
 	this->factory = f;
 }
 
-void ElementList::setElement(int i, state::Element* element)
+void ElementList::setElement(int i, Element* element)
 {
 
-	std::vector<state::Element*>::iterator it = elements.begin();
+	std::vector<Element*>::iterator it = elements.begin();
 	elements.insert (it+i,e);
 }
 

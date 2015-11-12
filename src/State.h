@@ -3,13 +3,9 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#include "Element.h"
 #include "ElementGrid.h"
 #include "ElementList.h"
 #include "Observable.h"
-
-
-class ElementGrid;
 
 class State:public Observable{
 	
