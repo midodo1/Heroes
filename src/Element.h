@@ -4,22 +4,16 @@
 #include <string>
 
 
-
-class Element{
-
-	public:
-	
-		enum  TypeId 
+	enum  TypeID 
 					{
-						Hero=1,
-						Soldier=2,
-						Citizen=3,
-						Building=4,
-						Roc=5,
-						Grass=6
+						HERO=1,
+						SOLDIER=2,
+						SPACE=3,
+						WALL=4,
+						
 					};
 
-		enum Direction
+	enum Direction
 					{
 						NONE=0,
 						EAST=1,
@@ -27,35 +21,33 @@ class Element{
 						WEST=3,
 						SOUTH=4,
 					};
-	
 
-	
+
+
+class Element{
+
+	public:	
 	
 		Element();
 		
-		Element(int a,int b,Element::Direction dir);
-		
-		//virtual ~Element();
-	
-		virtual TypeId const getTypeId();
+		virtual ~Element() ;
 		
 		virtual bool const isStatic() ;
-		
-		virtual Element* const clone()  ;
-		
-		bool const equals(const Element&);
+	
+		TypeID const getTypeID();
 	
 		int const getX();
 	
 		int const getY();
 		
-		Direction const  getOrientation();
+		Direction const  getDirection();
 		
-		void setX(int);
+		void setX(int x);
 		
-		void setY(int);
+		void setY(int y);
 		
-		void setOrientation(int);
+		void setDirection(Direction orientation);
+		
 
 	protected:
 	
@@ -64,6 +56,9 @@ class Element{
 		int y;
 	
 		Direction orientation;
+		
+		TypeID typeID ;
+		
 	
 };
 

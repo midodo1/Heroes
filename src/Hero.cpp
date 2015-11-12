@@ -9,15 +9,17 @@ bool const Hero::isHero()
 	return true;
 }
 
-Element::TypeId const Hero::getTypeId()
+TypeID const Hero::getTypeID()
 {
-	return Element::Hero ;
+	return HERO ;
 }
 
-
-Hero* const Hero::clone()
+HeroStatus const Hero::getStatus()
 {
-	return (new Hero(*this));
+		return status;
 }
 
-
+void Hero::setStatus(HeroStatus status)
+{
+	this->status = status ;
+}

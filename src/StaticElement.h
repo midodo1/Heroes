@@ -9,7 +9,7 @@ class StaticElement : public Element{
 	public:
 	
 			bool const isStatic();
-			virtual bool const isGrass();
+			virtual bool const isSpace();
 	
 };
 

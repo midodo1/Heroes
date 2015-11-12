@@ -6,6 +6,8 @@ using namespace std ;
 //std::map<char,AElementAlloc*> ElementFactory::list = std::map<char,AElementAlloc*>();
 
 
+ElementFactory::~ElementFactory(){}
+
 void ElementFactory::registerType(char id , AElementAlloc* a)
 {
 		if(list.find(id) == list.end())

@@ -4,29 +4,17 @@ using namespace std ;
 
 State::State(){}
 
-State::~State(){}
-
-int const State::getEpoch()
-{
-	return epoch;
-}
-
-float const State::getEpochRate()
-{
-	return epochRate;
-}
-
 const ElementGrid& const State::getGrid()
 {
 		return grid;
 } 
 
-ElementGrid& State::getGrid()
+const ElementGrid& const State::getGrid()
 {
 		return const_cast<ElementGrid&>(static_cast<const State*>(this)->getGrid());
 }
 
-const ElementList& const State::getChars
+ ElementList&  State::getChars
 {
 	return chars;
 }
@@ -37,18 +25,9 @@ ElementList& State::getChars()
 }
 
 void State::setElementFactory(ElementFactory* f)
-{
-	this->list = f->list ;
-}
-
-void State::setEpoch(int time)
-{
-	this->epoch = time;
-}
-
-void State::setEpochRate(float rate)
-{
-	this->epochRate = rate;
+{	
+		chars.setElementFactory(f);
+		grid.setElementFactory(f);
 }
 
 void State::setGrid(const ElementGrid& grid)
@@ -63,7 +42,7 @@ void State::setChars(const ElementList& list)
 
 void State::loadLevel(const char file_name)
 {
-
+	grid.load(file_name);
 }
 
 

@@ -5,12 +5,11 @@
 #include <vector>
 #include "Surface.h"
 #include "TileSet.h"
-#include "Animation.h"
+#include "StateObserver.h"
 
 
 
-
-class Layer{
+class Layer : virtual public StateObserver{
 	
 		public:
 			
@@ -24,13 +23,7 @@ class Layer{
 				
 				void setSurface(Surface* surface);
 				
-				void setAnimation(int i,Animation* a);
-				
 				void printText(int x,int y,const char* msg,int spriteIDx,int w,int h);
-			
-				void sync(int64_t time);
-				
-				void update(int64_t time);
 			
 		protected:
 		
@@ -38,10 +31,7 @@ class Layer{
 			
 				const TileSet tileset;
 			
-		private:
-		
-				std::map<int,Animation*> animations;
-						
 };
 
 #endif
+

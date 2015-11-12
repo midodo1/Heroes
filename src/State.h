@@ -6,9 +6,10 @@
 #include "Element.h"
 #include "ElementGrid.h"
 #include "ElementList.h"
+#include "Observable.h"
 
 
-
+class ElementGrid;
 
 class State:public Observable{
 	
@@ -16,25 +17,11 @@ class State:public Observable{
 			
 				State();
 				
-				~State();
-				
-				int const getEpoch();
-				
-				float const getEpochRate();
-				
-				const ElementGrid& const getGrid();
-				
 				ElementGrid& getGrid();
-				
-				const ElementList& const getChars();
 				
 				ElementList& getChars();
 				 
 				void setElementFactory(ElementFactory* f); 
-				
-				void setEpoch(int time);
-				 
-				void setEpochRate(float rate); 
 				
 				void setGrid(const ElementGrid& grid);
 				
@@ -47,11 +34,6 @@ class State:public Observable{
 			ElementList chars;
 			
 			ElementGrid grid;
-			
-			int epoch;
-			
-			float epochRate;
-			
 						
 };
 

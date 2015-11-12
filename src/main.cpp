@@ -1,57 +1,82 @@
-#include <cstdlib>
-#include <SFML/Graphics.hpp> 
-#include <SFML/Window.hpp>
-#include "TileMap.h"
+#include <iostream>
+#include <string>
+#include "Element.h"
+#include "MobileElement.h"
+#include "StaticElement.h"
+#include "Hero.h"
+#include "Space.h"
+#include "ElementFactory.h"
+#include "AElementAlloc.h"
+#include "ElementAlloc.h"
+#include "Observable.h"
+#include "StateObserver.h"
+#include "ElementList.h"
+#include "ElementGrid.h"
 
-using namespace sf;
 
 
-/* *****************************************************************************************************************************************
-																																		   *	
-Ce main et la classe TileMap ne sont pas en relation avec ce projet et montrent juste la façon dont nous allons afficher la map .		   *
-																																		   *
- *******************************************************************************************************************************************/
 
 
-int main()
-{
-    // create the window
-    sf::RenderWindow window(sf::VideoMode(512, 256), "Tilemap");
 
-    // define the level with an array of tile indices
-    const int level[] =
-    {
-        0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0,
-        1, 1, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3,
-        0, 1, 0, 0, 2, 0, 3, 3, 3, 0, 1, 1, 1, 0, 0, 0,
-        0, 1, 1, 0, 3, 3, 3, 0, 0, 0, 1, 1, 1, 2, 0, 0,
-        0, 0, 1, 0, 3, 0, 2, 2, 0, 0, 1, 1, 1, 1, 2, 0,
-        2, 0, 1, 0, 3, 0, 2, 2, 2, 0, 1, 1, 1, 1, 1, 1,
-        0, 0, 1, 0, 3, 2, 2, 2, 0, 0, 0, 0, 1, 1, 1, 1,
-    };
+using namespace std ;
 
-    // create the tilemap from the level definition
-    TileMap map;
-    if (!map.load("../res/textures/tileset.png", sf::Vector2u(32, 32), level, 16, 8))
-        return -1;
+int main(){
+	/*
+	Element ez,lol;
+	
+	cout<<ez.equals(lol)<<endl;
+	
+	ez.setX(43);
+		
+	cout<<ez.getX()<<endl;
+	
+	ez.setY(70);
+	cout<<ez.getY()<<endl;
 
-    // run the main loop
-    while (window.isOpen())
-    {
-        // handle events
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if(event.type == sf::Event::Closed)
-                window.close();
-        }
+	cout<<ez.equals(lol)<<endl;
+	
+    lol.setOrientation(3);
+    ez.setOrientation(4);
+    
+    cout<<(int)lol.getOrientation()<<endl;
+    cout<<(int)ez.getOrientation()<<endl;
+*/
 
-        // draw the map
-        window.clear();
-        window.draw(map);
-        window.display();
-    }
 
-    return 0;
+	//MobileElement ez,lol,haha,mobi;
+	//Element elt;
+	//Element elt1(1,3,Element::WEST);
+	//MobileElement mobi1 (4 , 18 ,Element::SOUTH,6,7,8);
+	//Hero her = new MobileElement(4 , 18 ,Element::SOUTH,6,7,8);
+	//StaticElement stat ;
+/*
+
+	cout<<elt.getX()<<endl;
+	cout<<elt.getY()<<endl;
+	cout<<(int)elt.getDirection()<<endl;
+
+
+
+	cout<<"             "<<endl;
+	eltclone.setX(20);
+	cout<<eltclone.getX()<<endl;
+	cout<<eltclone.getY()<<endl;
+	cout<<(int)eltclone.getDirection()<<endl;
+
+	//cout<<ez.equals(lol)<<endl;
+	
+
+
+*/
+	
+	//Hero her; 
+	
+
+	//her->setX(23);
+	//cout<<her->getX()<<endl;
+
+	
+return 0 ;
+
+
 }

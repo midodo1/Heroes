@@ -14,13 +14,15 @@ enum  HeroStatus
 
 class Hero : public MobileElement{
 	
+	HeroStatus status;
+	
 	public:
 			Hero();
 			bool const isHero();
-			Element::TypeId const getTypeId(); 
-			Hero* const clone();
+			TypeID const getTypeID(); 
+			HeroStatus const getStatus();
+			void setStatus(HeroStatus status);
 			
-	
 };
 
 

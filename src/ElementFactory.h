@@ -15,7 +15,7 @@ class ElementFactory{
 	
 		public:
 		
-			~ElementFactory();
+			//~ElementFactory();
 			
 			Element* const newInstance(char id);
 			
@@ -27,3 +27,4 @@ class ElementFactory{
 };
 
 #endif
+

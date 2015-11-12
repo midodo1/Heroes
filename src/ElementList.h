@@ -4,12 +4,11 @@
 #include <iostream>
 #include <vector>
 #include "Element.h"
-#include "State.h"
 #include "Observable.h"
 #include "ElementFactory.h"
 
 
-
+class State;
 
 class ElementList:public Observable{
 	
@@ -17,22 +16,20 @@ class ElementList:public Observable{
 			
 				ElementList(State& s);
 				
-				~ElementList();
-				
-				const State& const getState(); 
+			    State& getState(); 
 				
 				int const size();
 				
-				Element* const get(int i);
+				Element* getElement (int i);
 				
 				void clear();
 				
 				void setElementFactory(ElementFactory* f);
 				
-				void set(int i,Element* e);
+				void setElement(int i,Element* e);
 				
-				void const notifyObservers(int i=-1);
-			
+				void notifyObservers(int i);
+				
 		protected:
 		
 			State& s;
@@ -45,3 +42,5 @@ class ElementList:public Observable{
 };
 
 #endif
+
+

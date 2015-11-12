@@ -18,15 +18,9 @@ class MobileElement : public Element {
 	
 			MobileElement();
 			
-			MobileElement(int a,int b,Element::Direction dir,int s,int p,int l);
-			
-			bool const equals(const MobileElement&);
-			
 			bool  const isStatic();
 			
 			virtual bool const isHero();
-			
-			Direction const getDirection();
 			
 			int const getSpeed();
 			
@@ -34,13 +28,11 @@ class MobileElement : public Element {
 			
 			int const getLifePoint();
 			
-			void setDirection(int);
+			void setSpeed(int speed);
 			
-			void setSpeed(int);
+			void setPosition(int position);
 			
-			void setPosition(int);
-			
-			void setLifePoint(int);
+			void setLifePoint(int lifePoint);
 			
 	
 };

@@ -2,10 +2,13 @@
 #define DEF_ELEMENTGRID
 #include <string>
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include "Element.h"
+#include "Space.h"
 #include "ElementList.h"
 #include "State.h"
+
 
 
 
@@ -16,13 +19,13 @@ class ElementGrid:public ElementList{
 			
 				ElementGrid(State& s);
 				
-				~State();
+				int const getWidth();
 				
-				getChars; 
+				int const getHeight();
 				
-				setChars;
+				Element* getCell(int i, int j) const;
 				
-				loadLevel;
+				void loadLevel(const char* name);
 			
 		protected:
 		

@@ -8,7 +8,7 @@ bool  const StaticElement::isStatic()
 	return true ;
 }
 
-bool const StaticElement::isGrass()
+bool const StaticElement::isSpace()
 {
 	return false;
 }

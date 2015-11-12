@@ -5,47 +5,16 @@ using namespace std;
 
 
 
-Element::Element() : x(0) , y(0) , orientation(NONE)
+Element::Element() : x(0) , y(0) , orientation(NONE) , typeID(SPACE)
 {
 	
 }
 
-Element::Element(int a ,int b , Element::Direction dir) : x(a) , y(b) , orientation(dir)
+TypeID const Element::getTypeID()
 {
-	
+	return typeID ;
 }
 
-Element::TypeId const Element::getTypeId()
-{
-	return Element::Grass ;
-}
-
-
-
-bool const Element::isStatic()
-{
-		return false;
-}
-
-Element* const Element::clone()
-{
-	return (new Element(*this));
-}
-
-
-
-bool const Element::equals(const Element& other)
-{
-	if(other.x == this->x && other.y == this->y && other.orientation == this->orientation) 
-    {
-        return true ; 
-    }
-    else
-    {
-		return false ;
-	}
-	 
-}
 
 int const Element::getX()
 {
@@ -57,7 +26,8 @@ int const Element::getY()
 	return y ;
 }
 
-Element::Direction const  Element::getOrientation()
+
+Direction const  Element::getDirection()
 {
 		return orientation;
 }
@@ -75,11 +45,10 @@ void Element::setY(int y){
 	this->y=y;
 }
 
-void Element::setOrientation(int o)
+void Element::setDirection(Direction orientation)
 {
-	this->orientation = (Element::Direction) o ;	
+	this->orientation = orientation ;	
 }
-
 
 
 
