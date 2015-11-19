@@ -9,9 +9,9 @@
 
 
 
-class State;
+//class State;
 
-class ElementList:public Observable {
+class ElementList : public Observable {
 	
 		public:
 			

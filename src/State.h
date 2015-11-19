@@ -6,6 +6,8 @@
 #include "ElementGrid.h"
 #include "ElementList.h"
 #include "Observable.h"
+#include "ElementFactory.h"
+
 
 class State:public Observable{
 	

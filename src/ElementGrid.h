@@ -4,17 +4,17 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "Element.h"
 #include "Space.h"
 #include "ElementList.h"
-#include "State.h"
 
 
-class ElementGrid:public ElementList {
+
+
+class ElementGrid : public ElementList{
 	
 		public:
 			
-				ElementGrid(State& s);
+				ElementGrid(State & s);
 				
 				int const getWidth();
 				

@@ -1,13 +1,16 @@
-#include "ActionList"
+#include "ActionList.h"
 
 using namespace std;
 
-ActionList()::ActionList(){}
+ActionList::ActionList(){}
 
-ActionList::ActionList(State& s,bool notify):s(s),notify(notify){}
+ActionList::ActionList(State& st,bool notify):s(st),notify(notify){}
 
 			
-Action* const ActionList()::get(int i){return actions(i);}
+Action* const ActionList::get(int i)
+{
+	return this->actions[i];
+}
 			
 void ActionList::apply(){}
 			 
