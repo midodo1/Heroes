@@ -5,7 +5,7 @@
 #include <vector>
 
 
-enum CommandTypeId {
+enum CommandTypeID {
 						LOAD = 1, 
 						MODE = 2, 
 						DIRECTION = 3

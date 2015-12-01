@@ -1,26 +1,21 @@
 #include "Engine.h"
+#include "Ruler.h"
 
 using namespace std ; 
 
-const State& const Engine::getState()
+State& Engine::getState()
 {
-	return state;
+	return currentState;
 }
 				
-void Engine::addCommands(Commands* cmd)
+void Engine::addCommands(Command* cmd)
 {
-	currentCommands.commandSet(cmd);
+	currentCommands->set(cmd);
 }
 				
 void takeCommands(CommandSet& commands)
 {
-	Ruler ruler(this->commandSet, this->levelState);
-	//std::cout << "benoit";
+       	//Ruler ruler = Ruler(commands.set, commands.levelState);
 	
-	
-	/*Appeler les methodes du Ruller pour verifier les commandes*/
-	
-	
-	
-	ruler.apply();	
+//	ruler.apply();	
 }

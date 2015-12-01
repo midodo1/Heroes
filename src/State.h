@@ -6,8 +6,11 @@
 #include "ElementGrid.h"
 #include "ElementList.h"
 #include "Observable.h"
-#include "ElementFactory.h"
 
+
+
+
+class ElementFactory;
 
 class State:public Observable{
 	
@@ -16,9 +19,9 @@ class State:public Observable{
 				State();
 				
 				ElementGrid& getGrid();
-				
+			        
 				ElementList& getChars();
-				 
+			        
 				void setElementFactory(ElementFactory* f); 
 				
 				void setGrid(const ElementGrid& grid);
@@ -26,6 +29,7 @@ class State:public Observable{
 				void setChars(const ElementList& list);
 				
 				void loadLevel(const char file_name);
+                                
 			
 		protected:
 		

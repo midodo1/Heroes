@@ -4,7 +4,7 @@
 
 using namespace std ;
 
-ElementList::ElementList(State& State): State(s){}
+ElementList::ElementList(State& State): s(State){}
 
 State& ElementList::getState()
 {
@@ -36,7 +36,7 @@ void ElementList::setElement(int i, Element* element)
 {
 
 	std::vector<Element*>::iterator it = elements.begin();
-	elements.insert (it+i,e);
+	elements.insert (it+i,element);
 }
 
 void ElementList::notifyObservers(int i)

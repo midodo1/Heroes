@@ -20,7 +20,7 @@ class MobileElement : public Element {
 			
 			bool  const isStatic();
 			
-			virtual bool const isHero();
+			virtual bool const isHero() = 0;
 			
 			int const getSpeed();
 			

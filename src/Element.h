@@ -33,7 +33,7 @@ class Element{
 		
 		virtual ~Element() ;
 		
-		virtual bool const isStatic() ;
+		virtual bool const isStatic() = 0 ;
 	
 		TypeID const getTypeID();
 	

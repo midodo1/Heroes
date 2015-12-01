@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "Element.h"
+#include "Command.h"
 
 
 
@@ -13,7 +14,7 @@ class DirectionCommand : public Command {
 	
 		public:
 		
-				DirectionCommand(int c, Element::Direction s);
+				DirectionCommand(int c, Direction s);
 				
 				int const getCategory();
 				
@@ -25,7 +26,7 @@ class DirectionCommand : public Command {
 				
 		protected:
 		
-				Element::Direction direction;
+				Direction direction;
 				
 				int character;
 		

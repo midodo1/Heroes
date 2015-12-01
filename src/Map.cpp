@@ -2,24 +2,24 @@
 
 using namespace std ;
 
-void SFMLSurface::clear()
+void Map::clear()
 {	
 	vertices.clear();
 }
 
-void SFMLSurface::loadTexture(const char* tileset)
+void Map::loadTexture(const char* tileset)
 {
 	if (!this->tileset.loadFromFile(tileset))
 		std::cout << "Texture Error.." << std::endl;
 }
 
-void SFMLSurface::setSpriteCount(int n)
+void Map::setSpriteCount(int n)
 {
 	this->vertices.setPrimitiveType(sf::Quads);
     this->vertices.resize(n * 4);
 }
 
-void SFMLSurface::setSpriteLocation(int i, int x, int y)
+void Map::setSpriteLocation(int i, int x, int y)
 {	
 	sf::Vertex* quad = &vertices[i * 4];
 	
@@ -29,7 +29,7 @@ void SFMLSurface::setSpriteLocation(int i, int x, int y)
 	quad[3].position = sf::Vector2f(x, y + 32);
 }
 
-void SFMLSurface::setSpriteTexture(int i, const render::StaticTile* tex)
+void Map::setSpriteTexture(int i, const StaticTile* tex)
 {
 
 	sf::Vertex* quad = &vertices[i * 4];
@@ -45,7 +45,7 @@ void SFMLSurface::setSpriteTexture(int i, const render::StaticTile* tex)
 	quad[3].texCoords = sf::Vector2f(x, y + height);
 }
 
-void SFMLSurface::draw(sf::RenderTarget& target, sf::RenderStates states) const
+void Map::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 
 	states.transform *= getTransform();

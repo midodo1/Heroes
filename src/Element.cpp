@@ -10,6 +10,8 @@ Element::Element() : x(0) , y(0) , orientation(NONE) , typeID(SPACE)
 	
 }
 
+Element::~Element(){}
+
 TypeID const Element::getTypeID()
 {
 	return typeID ;

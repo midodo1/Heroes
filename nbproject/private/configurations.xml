@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="src" name="0">
+      <in>AElementAlloc.cpp</in>
+      <in>AElementAlloc.h</in>
+      <in>Action.cpp</in>
+      <in>Action.h</in>
+      <in>ActionList.cpp</in>
+      <in>ActionList.h</in>
+      <in>Command.cpp</in>
+      <in>Command.h</in>
+      <in>CommandSet.cpp</in>
+      <in>CommandSet.h</in>
+      <in>DirectionCommand.cpp</in>
+      <in>DirectionCommand.h</in>
+      <in>Element.cpp</in>
+      <in>Element.h</in>
+      <in>ElementAlloc.cpp</in>
+      <in>ElementAlloc.h</in>
+      <in>ElementFactory.cpp</in>
+      <in>ElementFactory.h</in>
+      <in>ElementGrid.cpp</in>
+      <in>ElementGrid.h</in>
+      <in>ElementList.cpp</in>
+      <in>ElementList.h</in>
+      <in>ElementListLayer.cpp</in>
+      <in>ElementListLayer.h</in>
+      <in>Engine.cpp</in>
+      <in>Engine.h</in>
+      <in>Hero.cpp</in>
+      <in>Hero.h</in>
+      <in>Layer.cpp</in>
+      <in>Layer.h</in>
+      <in>ListEvent.cpp</in>
+      <in>ListEvent.h</in>
+      <in>Map.cpp</in>
+      <in>Map.h</in>
+      <in>MobileElement.cpp</in>
+      <in>MobileElement.h</in>
+      <in>MoveCharacter.cpp</in>
+      <in>MoveCharacter.h</in>
+      <in>Observable.cpp</in>
+      <in>Observable.h</in>
+      <in>Record.cpp</in>
+      <in>Record.h</in>
+      <in>Ruler.cpp</in>
+      <in>Ruler.h</in>
+      <in>Scene.cpp</in>
+      <in>Scene.h</in>
+      <in>Space.cpp</in>
+      <in>Space.h</in>
+      <in>State.cpp</in>
+      <in>State.h</in>
+      <in>StateEvent.cpp</in>
+      <in>StateEvent.h</in>
+      <in>StateLayer.cpp</in>
+      <in>StateLayer.h</in>
+      <in>StateObserver.h</in>
+      <in>StaticElement.cpp</in>
+      <in>StaticElement.h</in>
+      <in>StaticTile.cpp</in>
+      <in>StaticTile.h</in>
+      <in>Surface.h</in>
+      <in>Tile.cpp</in>
+      <in>Tile.h</in>
+      <in>TileSet.cpp</in>
+      <in>TileSet.h</in>
+      <in>Wall.cpp</in>
+      <in>Wall.h</in>
+      <in>main.cpp</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>build</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

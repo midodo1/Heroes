@@ -6,7 +6,7 @@ CommandSet::CommandSet(){}
 				
 int const CommandSet::size(){return commands.size();}
 				
-Command* const CommandSet::get(int category){return commands(category);}
+Command* const CommandSet::get(int category){return commands[category];}
 		
 void CommandSet::set(Command* cmd){}
 				

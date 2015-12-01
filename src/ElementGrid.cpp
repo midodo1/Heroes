@@ -1,4 +1,5 @@
 #include "ElementGrid.h"
+#include "ElementFactory.h"
 
 
 ElementGrid::ElementGrid(State& state) : ElementList(state), width(0), height(0) {}
@@ -23,7 +24,7 @@ void ElementGrid::setCell(int i, int j, Element* e)
 	this->elements[i*width + j] = e ;
 }
 
-void ElementGrid::loadlevel(const char* name){
+void ElementGrid::loadLevel(const char* name){
 	
 	std::ifstream file(name, std::ios::in);
 	char level[1024];

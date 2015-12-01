@@ -3,23 +3,26 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#include "Element.h"
 #include "Observable.h"
-#include "ElementFactory.h"
 
 
 
-//class State;
+
+class State;
+class Element;
+class ElementFactory;
+
 
 class ElementList : public Observable {
 	
 		public:
-			
-				ElementList(State & s);
+                                
+                    
+				ElementList(State& s);
 				
-			    State & getState(); 
+			        State & getState(); 
 				
-				int const size();
+				int size() const;
 				
 				Element* getElement (int i);
 				

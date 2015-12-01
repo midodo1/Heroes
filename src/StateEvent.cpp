@@ -2,7 +2,7 @@
 
 using namespace std ;
 
-StateEvent::StateEvent(const State& state, StateEventID id) : State(state), id(id){}
+StateEvent::StateEvent(const State& State, StateEventID id) : state(State), id(id){}
 
 bool const StateEvent::operator==(StateEventID id) 
 {

@@ -2,7 +2,7 @@
 
 using namespace std ; 
 
-MoveCharacter(int idx):idx(idx) , dx(0),dy(0),previousDirection(NONE),newDirection(NONE){}
+MoveCharacter::MoveCharacter(int index):idx(index), dx(0),dy(0),previousDirection(NONE),newDirection(NONE) {}
 				
 void MoveCharacter::setCoords(int dx , int dy , int dpos)
 {
@@ -14,7 +14,7 @@ void MoveCharacter::setCoords(int dx , int dy , int dpos)
 
 }
 				
-void MoveCharacter::setDirection(Element::Direction prev, Element::Direction next)
+void MoveCharacter::setDirection(Direction prev, Direction next)
 {
 	 this->previousDirection = prev;
 	 

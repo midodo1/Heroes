@@ -6,12 +6,14 @@
 #include "StateObserver.h"
 #include "ElementListLayer.h"
 #include "StateLayer.h"
-#include "DebugLayer.h"
-#include "State"
-#include "Layer"
-#include "StateEvent"
-#include "Surface"
+//#include "DebugLayer.h"
+//#include "State"
 
+
+
+class Layer;
+class StateEvent;
+class Surface;
 
 enum  SceneLayer 
 					{

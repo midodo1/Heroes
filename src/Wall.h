@@ -1,6 +1,6 @@
 #ifndef WALL_H
 #define WALL_H
-#include "staticElement.h"
+#include "StaticElement.h"
 
 enum ObstacleTypeID { WATER = 1, 
 					  ROC = 2, 
@@ -11,13 +11,13 @@ enum ObstacleTypeID { WATER = 1,
 class Wall : public StaticElement {
 	
 	protected:
-		WallTypeID WallID;
+		ObstacleTypeID ObstacleID;
 	
 	public:
-		Wall(WallTypeID id);
+		Wall(ObstacleTypeID id);
 		virtual bool isSpace() const;
-		WallTypeID getWallTypeID() const;
-		void setWallTypeID(WallTypeID id);
+		ObstacleTypeID getWallTypeID() const;
+		void setWallTypeID(ObstacleTypeID id);
 
 };
 #endif

@@ -12,11 +12,11 @@ class Ruler
 {
 		protected:
 			const CommandSet& commands;
-			State::State& currentState;
+			State& currentState;
 			ActionList actions;
 			
 		public:
-			Ruler(CommandSet&, State&);
+			Ruler(CommandSet&, State& ,ActionList);
 			~Ruler();
 			void apply();
 };

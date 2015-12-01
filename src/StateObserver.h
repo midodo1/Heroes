@@ -12,7 +12,7 @@ class StateEvent ;
 class StateObserver{
 	
 		public:
-			virtual void stateChanged(const StateEvent&);				
+			virtual void stateChanged(const StateEvent&)=0;				
 };
 
 #endif

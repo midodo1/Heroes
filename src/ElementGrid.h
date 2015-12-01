@@ -4,10 +4,11 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "Space.h"
 #include "ElementList.h"
 
 
+class State;
+class Element;
 
 
 class ElementGrid : public ElementList{
@@ -21,6 +22,8 @@ class ElementGrid : public ElementList{
 				int const getHeight();
 				
 				Element* getCell(int i, int j) const;
+                                
+                                void setCell(int i, int j, Element* e);
 				
 				void loadLevel(const char* name);
 			

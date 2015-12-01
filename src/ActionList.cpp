@@ -2,7 +2,6 @@
 
 using namespace std;
 
-ActionList::ActionList(){}
 
 ActionList::ActionList(State& st,bool notify):s(st),notify(notify){}
 

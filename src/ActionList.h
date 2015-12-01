@@ -14,8 +14,6 @@ class ActionList{
 	
 		public:
 		
-			ActionList();
-		
 			ActionList(State& s,bool notify);
 			
 			int const size();

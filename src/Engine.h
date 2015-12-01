@@ -6,24 +6,24 @@
 #include "ActionList.h"
 #include "CommandSet.h"
 #include "State.h"
-#include "AElementFactory.h"
+#include "ElementFactory.h"
 
-
+class Command;
 
 
 class Engine{
 	
 		public:
 		
-				const State& const getState();
+				State& getState();
 				
-				void addCommands(Commands* cmd);
+				void addCommands(Command* cmd);
 				
 				void takeCommands(CommandSet& commands);
 				
 		protected:
 		
-				AElementFactory factory ; 
+				ElementFactory factory ; 
 				
 				State currentState ;
 				

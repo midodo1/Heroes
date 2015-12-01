@@ -27,6 +27,6 @@ void const Observable::notifyObservers(const StateEvent& stateEvent)
 	
 	for(std::vector<StateObserver*>::iterator observer = observers.begin(); observer != observers.end(); observer++)
 	{
-		(*observer)->stateChanged(stateEvent);
+		//(*observer)->stateChanged(stateEvent);
 	}
 }

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.6)
 
 #Déclaration du projet
 
-project(Heroes-client)
+project(Heroes)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(EXECUTABLE_OUTPUT_PATH ../bin)
@@ -12,7 +12,7 @@ set(EXECUTABLE_OUTPUT_PATH ../bin)
 
 set(EXECUTABLE_NAME "exe")
 file(GLOB SOURCES
-    "src/*.h"
+    #"src/*.h"
     "src/*.cpp"
 )
 add_executable(${EXECUTABLE_NAME} ${SOURCES})

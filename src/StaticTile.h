@@ -4,12 +4,13 @@
 #include <iostream>
 #include <vector>
 //#include "TileSet.h"
-#include "StateObserver.h"
-#include "StaticTile.h"
+//#include "StateObserver.h"
+#include "Tile.h"
 
 
 
-class StaticTile:Public Tile{
+class StaticTile:public Tile
+{
 	
 	protected:
 		int x;

@@ -1,4 +1,4 @@
-#include "space.h"
+#include "Space.h"
 
 Space::Space(SpaceTypeID id) : spaceID(id){
 	

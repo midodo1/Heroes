@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "Element.h"
+#include "Action.h"
 
 
 
@@ -16,7 +17,7 @@ class MoveCharacter:public Action{
 				
 				void setCoords(int dx , int dy , int dpos);
 				
-				void setDirection(Element::Direction prev, Element::Direction next);
+				void setDirection(Direction prev, Direction next);
 				
 		protected:
 		
@@ -26,9 +27,9 @@ class MoveCharacter:public Action{
 			
 			int dy;
 		
-			Element::Direction previousDirection;
+			Direction previousDirection;
 			
-			Element::Direction newDirection;
+			Direction newDirection;
 		
 };
 

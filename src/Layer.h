@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <SFML/Graphics.hpp>
 #include "Surface.h"
 #include "TileSet.h"
 #include "StateObserver.h"
@@ -17,7 +18,7 @@ class Layer : virtual public StateObserver{
 				
 				virtual ~Layer();
 				
-				const TileSet* const getTileSet(); 
+				const TileSet* getTileSet(); 
 				
 				void setTileSet(const TileSet* tileset);
 				
@@ -29,7 +30,7 @@ class Layer : virtual public StateObserver{
 		
 				Surface* surface;
 			
-				const TileSet tileset;
+				const TileSet* tileset;
 			
 };
 

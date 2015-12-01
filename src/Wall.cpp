@@ -1,18 +1,18 @@
 #include "Wall.h"
 
-Wall::Wall(WallTypeID id) : WallID(id){
+Wall::Wall(ObstacleTypeID id) : ObstacleID(id){
 	
-	this->typeId = WALL;
+	this->typeID = WALL;
 }
 bool Wall::isSpace() const{
 	
 	return false;
 }
-WallTypeID Wall::getWallTypeID() const{
+ObstacleTypeID Wall::getWallTypeID() const{
 	
-	return this->WallID;
+	return this->ObstacleID;
 }
-void Wall::setWallTypeID(WallTypeID id){
+void Wall::setWallTypeID(ObstacleTypeID id){
 
-	this->WallID = id;
+	this->ObstacleID = id;
 }

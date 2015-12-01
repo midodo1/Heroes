@@ -20,4 +20,4 @@ class Record
 		void stopRecord();
 };
 
-
+#endif

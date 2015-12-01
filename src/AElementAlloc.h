@@ -10,9 +10,9 @@ class AElementAlloc{
 	
 		public:
 		
-			virtual ~AElementAlloc();
+			virtual ~AElementAlloc() = 0;
 			
-			virtual Element* newInstance();
+			virtual Element* newInstance() = 0;
 						
 };
 

@@ -13,15 +13,15 @@ class Surface{
 	
 		public:
 			 
-			 virtual void clear();
+			 virtual void clear()=0;
 			 
-			 virtual void loadTexture(const char* image_file);
+			 virtual void loadTexture(const char* image_file)=0;
 			 
-			 virtual void setSpriteCount(int n);
+			 virtual void setSpriteCount(int n)=0;
 			 
-			 virtual void setSpriteLocation(int i , int x , int y);
+			 virtual void setSpriteLocation(int i , int x , int y)=0;
 			 
-			 virtual void setSpriteTexture(int i , const StaticTile* tex);
+			 virtual void setSpriteTexture(int i , const StaticTile* tex)=0;
 			 						
 };
 

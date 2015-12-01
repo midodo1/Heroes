@@ -8,12 +8,12 @@ Layer::~Layer(){}
 
 const TileSet* Layer::getTileSet(){
 	
-	return titleset;
+	return tileset;
 } 
 
 void Layer::setTileSet(const TileSet* tileset){
 	
-	this->titleset=titleset;
+	this->tileset = tileset;
 }
 
 void Layer::setSurface(Surface* surface){
@@ -26,8 +26,8 @@ void Layer::printText(int x,int y,const char* msg,int spriteIDx,int w,int h){
 	// SpriteIDx
 	sf::Font font;
 	font.loadFromFile("res/police/FLATS.ttf");
-	sf::Text text;
-	text.setFont(font);
+	sf::Text text2;
+	text2.setFont(font);
 	text2.setString(msg);
 	text2.setCharacterSize(h);
 	text2.setPosition(x,y);

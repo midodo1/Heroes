@@ -22,7 +22,7 @@ int const Scene::getHeight()
 
 int const Scene::getLayerCount()
 {
-	return layers.size;
+	return layers.size();
 }
 
 void Scene::setLayer(int idx , Layer* layer)
@@ -42,7 +42,7 @@ void Scene::setLayer(int idx , Layer* layer)
 
 void Scene::setSurface(int idx , Surface* surface)
 {
-	this->layers[idx].surface = surface ; 
+	//this->layers[idx].surface = surface ; use copy !!
 }
 
 void Scene::stateChanged(const StateEvent& e)

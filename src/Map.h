@@ -1,24 +1,23 @@
-w#ifndef DEF_MAP
+#ifndef DEF_MAP
 #define DEF_MAP
 #include <string>
 #include <iostream>
 #include <vector>
 #include "Surface.h"
 #include "TileSet.h"
-#include "Animation.h"
 #include "StateObserver.h"
 #include <SFML/Graphics.hpp>
 
 
-class Map:Public Surface, Public sf::Drawable, public sf::Transformable {
+class Map : public Surface, public sf::Drawable, public sf::Transformable {
 	
 		public:
 			
-			 virtual void clear();
-			 virtual void loadTexture(const char* tileset);
+			virtual void clear();
+			virtual void loadTexture(const char* tileset);
 			virtual void setSpriteCount(int n);
 			virtual void setSpriteLocation(int i, int x, int y);
-			virtual void setSpriteTexture(int i, const render::StaticTile* tex);
+			virtual void setSpriteTexture(int i, const StaticTile* tex);
 			 						
 		protected:
 			sf::VertexArray vertices;

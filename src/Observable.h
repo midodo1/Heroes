@@ -6,9 +6,10 @@
 #include <iterator>
 #include <algorithm> 
 //#include "Element.h"
-#include "StateObserver.h"
+//#include "StateObserver.h"
 
-
+class StateObserver;
+class StateEvent;
 
 class Observable{
 	

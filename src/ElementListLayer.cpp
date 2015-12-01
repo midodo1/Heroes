@@ -2,10 +2,10 @@
 
 using namespace std ;
 
-void ElementListLayer::stateChanged(const stateEvent& e){
+void ElementListLayer::stateChanged(const StateEvent& e){
 	
-	const ListEvent& ListEvent = static_cast<const ListEvent&>(e);
-	update(ListEvent.list, lListEvent.idx);
+	const ListEvent& listEvent = static_cast<const ListEvent&>(e);
+//	update(listEvent.list, listEvent.idx);
 }
 
 
