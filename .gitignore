@@ -1,8 +1,8 @@
 *~
 
-bin/
+bin/*
 
-build/
+build/*
 
-nbproject/
+nbproject/*
 
