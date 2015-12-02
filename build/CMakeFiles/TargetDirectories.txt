@@ -1,1 +1,0 @@
-/home/jack/Heroes/build/CMakeFiles/exe.dir

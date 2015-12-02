@@ -22,6 +22,7 @@ class Surface{
 			 virtual void setSpriteLocation(int i , int x , int y)=0;
 			 
 			 virtual void setSpriteTexture(int i , const StaticTile* tex)=0;
+                         
 			 						
 };
 

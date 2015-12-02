@@ -6,12 +6,12 @@
 //#include "ElementList&.h"
 #include "Layer.h"
 #include "State.h"
-#include "StateEvent.h"
+//#include "StateEvent.h"
 #include "StateObserver.h"
 
+class StateEvent;
 
-
-class StateLayer:public Layer{
+class StateLayer : public Layer{
 	
 		public:
 		

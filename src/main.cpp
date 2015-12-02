@@ -76,6 +76,10 @@ int main(){
 	//cout<<her->getX()<<endl;
 
 	
+
+cout<<"ca compile"<<endl;
+
+
 return 0 ;
 
 

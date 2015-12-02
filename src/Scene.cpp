@@ -42,7 +42,7 @@ void Scene::setLayer(int idx , Layer* layer)
 
 void Scene::setSurface(int idx , Surface* surface)
 {
-	//this->layers[idx].surface = surface ; use copy !!
+	this->layers[idx]->setSurface(surface) ; 
 }
 
 void Scene::stateChanged(const StateEvent& e)

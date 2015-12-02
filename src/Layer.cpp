@@ -21,6 +21,11 @@ void Layer::setSurface(Surface* surface){
 	this->surface=surface;
 }
 
+/*bool const Layer::operator == (Surface* surf)
+{
+    return this->surface = surf;
+}*/
+
 
 void Layer::printText(int x,int y,const char* msg,int spriteIDx,int w,int h){
 	// SpriteIDx

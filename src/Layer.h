@@ -23,6 +23,8 @@ class Layer : virtual public StateObserver{
 				void setTileSet(const TileSet* tileset);
 				
 				void setSurface(Surface* surface);
+                                
+                               // bool const operator == (Surface* surf);
 				
 				void printText(int x,int y,const char* msg,int spriteIDx,int w,int h);
 			
