@@ -14,6 +14,8 @@ class MoveCharacter:public Action{
 		public:
 		
 				MoveCharacter(int idx);
+                                
+                                MoveCharacter(int x , int y , Element* elem);
 				
 				void setCoords(int dx , int dy , int dpos);
 				
@@ -27,6 +29,8 @@ class MoveCharacter:public Action{
 			
 			int dy;
 		
+                        Element* element ;
+                        
 			Direction previousDirection;
 			
 			Direction newDirection;
