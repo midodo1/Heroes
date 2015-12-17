@@ -1,5 +1,7 @@
 #include "Engine.h"
 #include "Ruler.h"
+#include <mutex>
+#include <threads>
 
 using namespace std ; 
 
@@ -14,8 +16,13 @@ void Engine::addCommands(Command* cmd)
 }
 				
 void takeCommands(CommandSet& commands)
-{
-       	//Ruler ruler = Ruler(commands.set, commands.levelState);
 	
-//	ruler.apply();	
+{			
+		mutex.lock();
+	
+       	Ruler ruler = Ruler(commands.set, commands.levelState);
+	
+		ruler.apply();	
+		
+		mutex.unlock();
 }

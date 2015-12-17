@@ -47,10 +47,13 @@ void Map::setSpriteTexture(int i, const StaticTile* tex)
 
 void Map::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
-
+	mutex.lock();
 	states.transform *= getTransform();
 
 	states.texture = &(this->tileset);
 
 	target.draw(this->vertices, states);
+	
+	
+	mutex.unlock();
 }

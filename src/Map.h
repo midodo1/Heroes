@@ -3,6 +3,8 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <mutex>
+#include <thread>
 #include "Surface.h"
 #include "TileSet.h"
 #include "StateObserver.h"
