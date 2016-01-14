@@ -14,6 +14,7 @@ set(EXECUTABLE_NAME "exe")
 file(GLOB SOURCES
     #"src/*.h"
     "src/*.cpp"
+    "src/web/*.cpp"
 )
 add_executable(${EXECUTABLE_NAME} ${SOURCES})
 

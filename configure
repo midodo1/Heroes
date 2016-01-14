@@ -4,6 +4,7 @@ dia2code -t cpp -d src dia/engine.dia
 dia2code -t cpp -d src dia/state.dia
 dia2code -t cpp -d src dia/render.dia
 dia2code -t cpp -d src dia/AI.dia
+dia2code -t cpp -d src dia/web.dia
 
 mkdir -p build
 cd build
